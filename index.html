@@ -692,8 +692,8 @@ $(document).ready(function(){
                     }
                     var t_lastsettle = await contract.methods.bonus_calcT(addressActive).call();
                     //var dayseconds = await contract.methods.dayseconds().call();
-                    var dayseconds=300;
-                    //var dayseconds=86400;
+                    //var dayseconds=300;
+                    var dayseconds=86400;
 
                     if(parseInt(Date.now()/1000)-t_lastsettle<dayseconds){
                         alert("需要等待至少1天");
